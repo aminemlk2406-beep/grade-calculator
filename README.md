@@ -8,7 +8,7 @@ This project provides functions to:
 
 - Calculate the average of a list of grades.
 - Determine whether a student has passed (average greater than or equal to 10).
-- Classify grades into categories (feature developed by Student B).
+- - Grade classification into categories (upcoming feature, currently under development in PR #6).
 
 ## 2. Requirements
 
