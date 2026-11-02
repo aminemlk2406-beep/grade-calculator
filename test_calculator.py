@@ -1,8 +1,13 @@
+
 import pytest
-from calculator import calculate_average, get_grade_category, is_passing
+from calculator import (
+    calculate_average,
+    get_grade_category,
+    is_passing,
+)
 
 
-def test_average():
+def test_calculate_average():
     assert calculate_average([10, 12, 14]) == 12
 
 
@@ -11,9 +16,21 @@ def test_empty_grades():
         calculate_average([])
 
 
-def test_passing():
+def test_is_passing():
     assert is_passing(10) is True
     assert is_passing(9) is False
+
+
+def test_passing_grade():
+    assert is_passing(12) is True
+
+
+def test_failing_grade():
+    assert is_passing(8) is False
+
+
+def test_passing_grade_boundary():
+    assert is_passing(10) is True
 
 
 def test_grade_categories():
