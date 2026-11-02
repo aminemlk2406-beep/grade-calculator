@@ -14,3 +14,6 @@ def test_empty_grades():
 def test_passing():
     assert is_passing(10) is True
     assert is_passing(9) is False
+    
+def test_passing_grade_boundary():
+    assert is_passing(10) is True
