@@ -4,7 +4,5 @@ def calculate_average(grades):
     return sum(grades) / len(grades)
 
 
-#def is_passing(average):
-#    return average >= 10
 def is_passing(average):
-    return average > 10
+    return average >= 10
