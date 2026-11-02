@@ -6,3 +6,13 @@ def calculate_average(grades):
 
 def is_passing(average):
     return average >= 10
+
+
+def get_grade_category(average):
+    if average >= 16:
+        return "Excellent"
+    if average >= 12:
+        return "Good"
+    if average >= 10:
+        return "Average"
+    return "Fail"
